@@ -172,8 +172,9 @@ class Patrons:
         if len(valid_data) == 0:
             if len(invalid_data) > 0:
                 print("Data is invaild:", invalid_data)
+                return {"status": "error", "code": 400, "body": f"Data is invaild: {invalid_data}"}
             else:
-                print("No data provided")
+                return {"status": "error", "code": 400, "body": "No Data Provided"}
         params = valid_data
         response = requests.post(self.url, headers=self.headers, params=params)
         resp_data = response.json()
@@ -181,7 +182,7 @@ class Patrons:
             return {"status": "error", "code": response.status_code, "body": resp_data}
         return True
    
-    def update_patron(self, id: str, **data):
+    def update_patron(self, id: str, **data) -> bool | dict:
         """
         Update specific fields for an existing patron. Pass the patron's barcode or email as the id.
 
@@ -203,8 +204,9 @@ class Patrons:
         if len(valid_data) == 0:
             if len(invalid_data) > 0:
                 print("Data is invaild:", invalid_data)
+                return {"status": "error", "code": 400, "body": f"Data is invaild: {invalid_data}"}
             else:
-                print("No data provided")
+                return {"status": "error", "code": 400, "body": "No Data Provided"}
         params = valid_data
         response = requests.post(patronURL, headers=self.headers, params=params)
         resp_data = response.json()
