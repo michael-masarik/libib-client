@@ -85,7 +85,7 @@ Retrieve a single patron by passing the patron's barcode or email.
 
 ### Parameters
 
-- `id` *(str)*: The patron's barcode or email.
+- `identifier` *(str)*: The patron's barcode or email.
 
 ### Example (Using email)
 
@@ -181,7 +181,7 @@ Pass the patron's barcode or email as the `id`.
 
 ### Parameters
 
-- `id` *(str)*: The patron's barcode or email.
+- `identifier` *(str)*: The patron's barcode or email.
 
 ### Supported Update Fields
 
@@ -237,7 +237,7 @@ Patrons can be restored within 30 days of deletion.
 
 ### Parameters
 
-- `id` *(str)*: The patron's barcode or email.
+- `identifier` *(str)*: The patron's barcode or email.
 
 ### Example (Using barcode)
 
@@ -267,7 +267,7 @@ Deleting a patron dissociates their lending and hold history.
 
 ### Parameters
 
-- `id` *(str)*: The patron's barcode or email.
+- `identifier` *(str)*: The patron's barcode or email.
 
 ### Example (Using barcode)
 

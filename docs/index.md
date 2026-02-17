@@ -20,4 +20,16 @@ client = Libib("your-api-key", "your-user-id", "your-ultimate-id")
 
 ### Patrons
 
-Patron documentation can be [found here](/patrons)
+Patron documentation can be [found here](Patrons.md)
+
+### Managers
+
+Manager documentation can be [found here](Managers.md)
+
+### Accounts
+
+Manager documentation can be [found here](Accounts.md)
+
+## Note
+
+I do not have an Ultimate account, so if the Ultimate features (or any features, for that matter) do not work, feel free to open an issue or a PR
