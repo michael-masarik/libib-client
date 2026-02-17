@@ -221,7 +221,7 @@
 <p>Retrieve a single patron by passing the patron's barcode or email.</p>
 <h3 id="parameters">Parameters</h3>
 <ul>
-<li><code>id</code> <em>(str)</em>: The patron's barcode or email.</li>
+<li><code>identifier</code> <em>(str)</em>: The patron's barcode or email.</li>
 </ul>
 <h3 id="example-using-email">Example (Using email)</h3>
 <pre><code class="language-python">patron = client.patrons.get_patron_by_id(&quot;frankenstein@example.com&quot;)
@@ -292,7 +292,7 @@
 <p>Pass the patron's barcode or email as the <code>id</code>.</p>
 <h3 id="parameters_1">Parameters</h3>
 <ul>
-<li><code>id</code> <em>(str)</em>: The patron's barcode or email.</li>
+<li><code>identifier</code> <em>(str)</em>: The patron's barcode or email.</li>
 </ul>
 <h3 id="supported-update-fields">Supported Update Fields</h3>
 <p>You may pass any number of the following keyword arguments:</p>
@@ -335,7 +335,7 @@
 <p>Patrons can be restored within 30 days of deletion.</p>
 <h3 id="parameters_2">Parameters</h3>
 <ul>
-<li><code>id</code> <em>(str)</em>: The patron's barcode or email.</li>
+<li><code>identifier</code> <em>(str)</em>: The patron's barcode or email.</li>
 </ul>
 <h3 id="example-using-barcode_1">Example (Using barcode)</h3>
 <pre><code class="language-python">restored = client.patrons.restore_patron(&quot;2020000000013&quot;)
@@ -352,7 +352,7 @@
 <p>Deleting a patron dissociates their lending and hold history.</p>
 <h3 id="parameters_3">Parameters</h3>
 <ul>
-<li><code>id</code> <em>(str)</em>: The patron's barcode or email.</li>
+<li><code>identifier</code> <em>(str)</em>: The patron's barcode or email.</li>
 </ul>
 <h3 id="example-using-barcode_2">Example (Using barcode)</h3>
 <pre><code class="language-python">deleted = client.patrons.delete_patron(&quot;2020000000013&quot;)

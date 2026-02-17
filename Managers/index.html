@@ -189,7 +189,7 @@
 <p>Retrieve a single manager by passing the manager's email address as an identifier.</p>
 <h3 id="parameters">Parameters</h3>
 <ul>
-<li><code>id</code> <em>(str)</em>: The manager's email.</li>
+<li><code>email</code> <em>(str)</em>: The manager's email.</li>
 </ul>
 <h3 id="example_1">Example</h3>
 <pre><code class="language-python">manager = client.managers.get_manager_by_id(&quot;samthewise@example.com&quot;)
@@ -237,7 +237,7 @@ If the new user has a <code>manager</code> or <code>lender</code> role, assignin
 <p>Remove a single manager by their email address. You cannot remove the owner account via this method. Owners must delete their entire account manually.</p>
 <h3 id="parameters_2">Parameters</h3>
 <ul>
-<li><code>id</code> <em>(str)</em>: The manager's email.</li>
+<li><code>email</code> <em>(str)</em>: The manager's email.</li>
 </ul>
 <h3 id="example_3">Example</h3>
 <pre><code class="language-python">deleted = client.managers.delete_manager(&quot;samthewise@example.com&quot;)
