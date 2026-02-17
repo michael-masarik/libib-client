@@ -1,4 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "libib-client"
+version = "1.0.0"
+description = "A synchronous, third-party client for the Libib API"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Michael Masarik" }
+]
+keywords = ["libib", "library", "api", "client"]
+dependencies = ["requests>=2.31.0"]
+
+[project.urls]
+Homepage = "https://michael-masarik.github.io/libib-client/"
+Repository = "https://github.com/michael-masarik/libib-client"
+Issues = "https://github.com/michael-masarik/libib-client/issues"
+
 [tool.black]
 line-length = 101
 [tool.isort]
-profile = black
+profile = "black"
+
