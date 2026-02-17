@@ -2,7 +2,9 @@
 A synchronous, third-party client for the [Libib API](https://support.libib.com/rest-api/introduction.html)
 
 ## Install
-TODO
+```shell
+pip install libib-client
+```
 
 ## Usage
 
