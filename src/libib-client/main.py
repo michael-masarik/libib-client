@@ -111,7 +111,7 @@ class Patrons:
             return errors
         return patrons
 
-    def get_patron_id(self, id: str) -> dict:
+    def get_patron_by_id(self, id: str) -> dict:
         
         """
         Retrieve a single patron by passing the patron's barcode or email as an id.
