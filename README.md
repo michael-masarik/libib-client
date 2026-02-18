@@ -3,7 +3,7 @@ A synchronous, third-party client for the [Libib API](https://support.libib.com/
 
 ## Install
 ```shell
-pip install libib_client
+pip install libib-client
 ```
 
 ## Usage

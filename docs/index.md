@@ -11,7 +11,7 @@ pip install libib-client
 To initalize the client:
 
 ```python
-import Libib
+import libib_client
 
 # For Pro accounts
 client = Libib("your-api-key", "your-user-id")
