@@ -3,7 +3,7 @@ A synchronous, third-party client for the [Libib API](https://support.libib.com/
 
 ## Install
 ```shell
-pip install libib-client
+pip install libib_client
 ```
 
 ## Usage
@@ -11,7 +11,7 @@ pip install libib-client
 To initalize the client:
 
 ```python
-import Libib
+import libib_client
 
 # For Pro accounts
 client = Libib("your-api-key", "your-user-id")
